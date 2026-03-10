@@ -1,0 +1,86 @@
+ 1. Preprocesamiento de Datos
+✔️ Normalización del JSON
+Se utilizaron  para expandir las columnas anidadas:
+• 	customer
+• 	phone
+• 	internet
+• 	account
+✔️ Limpieza
+• 	Conversión de columnas numéricas (, )
+• 	Eliminación de valores nulos
+• 	Eliminación de  (no aporta al modelo)
+✔️ Codificación
+Se aplicó One-Hot Encoding con .
+
+ 2. Análisis Exploratorio
+Se identificaron patrones clave:
+• 	Clientes con contrato mes a mes presentan mayor churn.
+• 	Usuarios con fibra óptica tienen mayor probabilidad de abandonar.
+• 	Cargos mensuales altos aumentan el riesgo.
+• 	La falta de servicios como TechSupport y OnlineSecurity incrementa el churn.
+• 	Clientes con bajo tenure (poco tiempo en la empresa) son más vulnerables.
+
+ 3. Modelos Entrenados
+Se entrenaron cuatro modelos:
+• 	Regresión Logística
+• 	KNN
+• 	Random Forest
+• 	SVM
+Todos fueron evaluados con:
+• 	Accuracy
+• 	Precision
+• 	Recall
+• 	F1-score
+• 	Matriz de confusión
+
+4. Resultados y Comparación de Modelos
+
+Modelo recomendado: Regresión Logística
+• 	Mejor equilibrio entre recall y precisión
+• 	Mejor F1 para la clase churn
+• 	Interpretabilidad
+• 	Estabilidad y consistencia
+
+🔍 5. Importancia de Variables
+Según Random Forest, las variables más influyentes fueron:
+1. 	tenure
+2. 	Contract_Month-to-month
+3. 	InternetService_Fiber optic
+4. 	Charges.Monthly
+5. 	PaymentMethod_Electronic check
+6. 	TechSupport_No
+7. 	OnlineSecurity_No
+
+💼 6. Conclusiones de Negocio
+• 	Los clientes con contratos mes a mes son el segmento más crítico.
+• 	Los usuarios con fibra óptica y sin servicios adicionales presentan mayor churn.
+• 	Los cargos mensuales altos aumentan la probabilidad de abandono.
+• 	Los clientes con poco tiempo en la empresa requieren atención prioritaria.
+🎯 Recomendaciones
+• 	Ofrecer descuentos por permanencia o migración a contratos anuales.
+• 	Mejorar la experiencia de soporte técnico.
+• 	Crear planes personalizados para clientes con cargos altos.
+• 	Implementar campañas de retención para clientes con bajo tenure.
+
+🛠️ 7. Tecnologías Utilizadas
+• 	Python
+• 	Pandas
+• 	NumPy
+• 	Scikit-learn
+• 	Matplotlib / Seaborn
+• 	Google Colab
+• 	GitHub
+
+🚀 8. Cómo Ejecutar el Proyecto
+1. 	Clonar el repositorio
+2. 	Instalar dependencias:
+
+3. 	Abrir los notebooks en 
+4. 	Ejecutar en orden:
+• 	
+• 	
+
+✨ Autor
+Andrés Felipe Mejía Sánchez
+Data Analyst & Designer
+Bogotá, Colombia
